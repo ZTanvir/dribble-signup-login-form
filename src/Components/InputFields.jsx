@@ -5,7 +5,10 @@ const InputFields = (props) => {
     const { label, type, name, placeholder, required } = props;
     return (
         <div className="inputField">
-            <label htmlFor={`${inputId}${name}`}>{label}*</label>
+            <label htmlFor={`${inputId}${name}`}>
+                {label}
+                {required === true ? "*" : null}
+            </label>
             <input
                 id={`${inputId}${name}`}
                 type={type}

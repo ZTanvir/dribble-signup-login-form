@@ -1,0 +1,42 @@
+const SignInFormData = [
+    {
+        label: "First name",
+        type: "text",
+        name: "fname",
+        placeholder: "",
+        required: "true",
+        errorMessage: "",
+    },
+    {
+        label: "Last name",
+        type: "text",
+        name: "lname",
+        placeholder: "",
+        required: "true",
+        errorMessage: "",
+    },
+    {
+        label: "Phone number",
+        type: "tel",
+        name: "pnumber",
+        placeholder: "",
+        required: "true",
+        errorMessage: "",
+    },
+    {
+        label: "Email",
+        type: "email",
+        name: "email",
+        placeholder: "",
+        required: "true",
+        errorMessage: "",
+    },
+    {
+        label: "Create password",
+        type: "password",
+        name: "password",
+        placeholder: "",
+        required: "true",
+        errorMessage: "",
+    },
+];
