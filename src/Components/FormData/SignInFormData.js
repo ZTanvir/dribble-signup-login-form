@@ -1,5 +1,6 @@
 const SignInFormData = [
     {
+        id: crypto.randomUUID(),
         label: "First name",
         type: "text",
         name: "fname",
@@ -8,6 +9,7 @@ const SignInFormData = [
         errorMessage: "",
     },
     {
+        id: crypto.randomUUID(),
         label: "Last name",
         type: "text",
         name: "lname",
@@ -16,6 +18,7 @@ const SignInFormData = [
         errorMessage: "",
     },
     {
+        id: crypto.randomUUID(),
         label: "Phone number",
         type: "tel",
         name: "pnumber",
@@ -24,6 +27,7 @@ const SignInFormData = [
         errorMessage: "",
     },
     {
+        id: crypto.randomUUID(),
         label: "Email",
         type: "email",
         name: "email",
@@ -32,6 +36,7 @@ const SignInFormData = [
         errorMessage: "",
     },
     {
+        id: crypto.randomUUID(),
         label: "Create password",
         type: "password",
         name: "password",
@@ -40,3 +45,4 @@ const SignInFormData = [
         errorMessage: "",
     },
 ];
+export default SignInFormData;
