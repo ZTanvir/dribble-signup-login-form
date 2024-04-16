@@ -5,13 +5,14 @@
 import InputFields from "./InputFields";
 
 const Form = (props) => {
-    const { formInputData } = props;
+    const { formInputData, btnName } = props;
 
     return (
-        <form>
+        <form id="">
             {formInputData.map((input) => (
                 <InputFields key={input.id} label={input.label} {...input} />
             ))}
+            <button type="submit">{btnName}</button>
         </form>
     );
 };

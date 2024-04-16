@@ -5,7 +5,7 @@ import SignInFormData from "./Components/FormData/SignInFormData";
 function App() {
     return (
         <>
-            <Form formInputData={SignInFormData} />
+            <Form formInputData={SignInFormData} btnName="Submit" />
         </>
     );
 }
