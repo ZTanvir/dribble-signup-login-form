@@ -5,7 +5,14 @@
 import InputFields from "./InputFields";
 
 const Form = (props) => {
-    const { formInput } = props;
-    return <form>{formInput}</form>;
+    const { formInputData } = props;
+
+    return (
+        <form>
+            {formInputData.map((input) => (
+                <InputFields key={input.id} label={input.label} {...input} />
+            ))}
+        </form>
+    );
 };
 export default Form;

@@ -5,7 +5,7 @@ const SignInFormData = [
         type: "text",
         name: "fname",
         placeholder: "",
-        required: "true",
+        required: true,
         errorMessage: "",
     },
     {
@@ -14,7 +14,7 @@ const SignInFormData = [
         type: "text",
         name: "lname",
         placeholder: "",
-        required: "true",
+        required: true,
         errorMessage: "",
     },
     {
@@ -23,7 +23,7 @@ const SignInFormData = [
         type: "tel",
         name: "pnumber",
         placeholder: "",
-        required: "true",
+        required: true,
         errorMessage: "",
     },
     {
@@ -32,7 +32,7 @@ const SignInFormData = [
         type: "email",
         name: "email",
         placeholder: "",
-        required: "true",
+        required: true,
         errorMessage: "",
     },
     {
@@ -41,7 +41,7 @@ const SignInFormData = [
         type: "password",
         name: "password",
         placeholder: "",
-        required: "true",
+        required: true,
         errorMessage: "",
     },
 ];
