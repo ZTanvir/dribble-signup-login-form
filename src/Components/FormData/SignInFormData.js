@@ -6,7 +6,7 @@ const SignInFormData = [
         name: "fname",
         placeholder: "",
         required: true,
-        errorMessage: "",
+        errorMessage: "Please enter your first name",
     },
     {
         id: crypto.randomUUID(),
@@ -15,7 +15,7 @@ const SignInFormData = [
         name: "lname",
         placeholder: "",
         required: true,
-        errorMessage: "",
+        errorMessage: "Please enter your last name",
     },
     {
         id: crypto.randomUUID(),
@@ -23,8 +23,9 @@ const SignInFormData = [
         type: "tel",
         name: "pnumber",
         placeholder: "",
+        defaultValue: "+880",
         required: true,
-        errorMessage: "",
+        errorMessage: "Phone number must be 11 digit long",
     },
     {
         id: crypto.randomUUID(),
@@ -33,7 +34,7 @@ const SignInFormData = [
         name: "email",
         placeholder: "",
         required: true,
-        errorMessage: "",
+        errorMessage: "Please provide a properly formatted email address",
     },
     {
         id: crypto.randomUUID(),
@@ -41,8 +42,9 @@ const SignInFormData = [
         type: "password",
         name: "password",
         placeholder: "",
+        patttern: "^[a-zA-Z0-9]{6,}$",
         required: true,
-        errorMessage: "",
+        errorMessage: "Password must be at least 6 character long",
     },
 ];
 export default SignInFormData;

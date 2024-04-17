@@ -2,7 +2,16 @@ import { useId } from "react";
 
 const InputFields = (props) => {
     const inputId = useId();
-    const { label, type, name, placeholder, required } = props;
+    const {
+        label,
+        type,
+        name,
+        placeholder,
+        required,
+        defaultValue,
+        pattern,
+        errorMessage,
+    } = props;
     return (
         <div className="inputField">
             <label htmlFor={`${inputId}${name}`}>
@@ -14,8 +23,11 @@ const InputFields = (props) => {
                 type={type}
                 name={name}
                 placeholder={placeholder}
+                pattern={pattern}
+                defaultValue={defaultValue}
                 required={required}
             />
+            <span>{errorMessage}</span>
         </div>
     );
 };
