@@ -1,4 +1,5 @@
-import { useId } from "react";
+import { useState, useId } from "react";
+import styles from "../Styles/inputFields.module.css";
 
 const InputFields = (props) => {
     const inputId = useId();
@@ -12,8 +13,18 @@ const InputFields = (props) => {
         pattern,
         errorMessage,
     } = props;
+    const [activeError, setActiveError] = useState(false);
+
+    const handleOnBlur = (event) => {
+        console.log("Focus", event.target);
+        setActiveError(true);
+    };
+    const handleOnFocus = (event) => {
+        event.target.name === "password" ? setActiveError(true) : null;
+    };
+
     return (
-        <div className="inputField">
+        <div className={styles.inputField}>
             <label htmlFor={`${inputId}${name}`}>
                 {label}
                 {required === true ? "*" : null}
@@ -26,6 +37,9 @@ const InputFields = (props) => {
                 pattern={pattern}
                 defaultValue={defaultValue}
                 required={required}
+                focused={activeError.toString()}
+                onBlur={handleOnBlur}
+                onFocus={handleOnFocus}
             />
             <span>{errorMessage}</span>
         </div>

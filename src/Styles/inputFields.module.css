@@ -1,0 +1,31 @@
+.inputField {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+.inputField > input {
+    padding: 0.25rem 0.5rem 0.25rem 1rem;
+    font-size: 1.2rem;
+    border: 0.15px solid;
+    border-radius: 0.5rem;
+    outline: none;
+}
+.inputField > input:focus {
+    background-color: #e4f0ff;
+    border: 0.15px solid;
+}
+.inputField > input + span {
+    display: none;
+    font-size: 0.875rem;
+    padding: 0.125rem;
+    color: red;
+}
+
+.inputField > input:invalid[focused="true"] {
+    border: 1px solid #ff3d00;
+    background-color: #ffefef;
+}
+
+.inputField > input:invalid[focused="true"] + span {
+    display: block;
+}
