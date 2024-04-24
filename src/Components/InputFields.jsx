@@ -53,7 +53,10 @@ const InputFields = (props) => {
             <span>{errorMessage}</span>
             <span onClick={handleEyeIcon} className={styles.eyeIcon}>
                 {type === "password" && (
-                    <span className="material-symbols-outlined">
+                    <span
+                        title={passwordVisiable ? "Hide" : "Show"}
+                        className="material-symbols-outlined"
+                    >
                         {passwordVisiable ? "visibility_off" : "visibility"}
                     </span>
                 )}
