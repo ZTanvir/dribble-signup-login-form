@@ -2,17 +2,18 @@
     display: flex;
     flex-direction: column;
     gap: 0.125rem;
+    position: relative;
 }
 .inputField > input {
     padding: 0.25rem 0.5rem 0.25rem 1rem;
     font-size: 1.2rem;
-    border: 0.15px solid;
+    border: 0.15px solid #808080;
     border-radius: 0.5rem;
     outline: none;
 }
 .inputField > input:focus {
     background-color: #e4f0ff;
-    border: 0.15px solid;
+    border: 0.15px solid #007aff;
 }
 .inputField > input + span {
     display: none;
@@ -28,4 +29,11 @@
 
 .inputField > input:invalid[focused="true"] + span {
     display: block;
+}
+.eyeIcon {
+    position: absolute;
+    right: 9px;
+    top: 25px;
+    cursor: pointer;
+    opacity: 0.5;
 }
