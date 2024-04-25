@@ -1,0 +1,20 @@
+button {
+    background-color: #5957ba;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: white;
+    align-self: center;
+    margin-top: 1rem;
+}
+button:hover,
+button:focus {
+    cursor: pointer;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

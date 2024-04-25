@@ -3,12 +3,13 @@
 // Example SignUpFormData will generate Sign up form
 
 import InputFields from "./InputFields";
+import styles from "../Styles/form.module.css";
 
 const Form = (props) => {
     const { formInputData, btnName, handleSubmitForm } = props;
 
     return (
-        <form onSubmit={handleSubmitForm} id="">
+        <form className={styles.form} onSubmit={handleSubmitForm}>
             {formInputData.map((input) => (
                 <InputFields
                     key={input.id}
