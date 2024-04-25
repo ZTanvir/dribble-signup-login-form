@@ -1,4 +1,4 @@
-button {
+.form > button {
     background-color: #5957ba;
     outline: none;
     border: none;
@@ -9,8 +9,8 @@ button {
     align-self: center;
     margin-top: 1rem;
 }
-button:hover,
-button:focus {
+.form button:hover,
+.form button:focus {
     cursor: pointer;
 }
 .form {
