@@ -5,10 +5,10 @@ import SignUpSection from "./Components/SignUpSection";
 
 function App() {
     return (
-        <>
+        <main className="">
             <Form formInputData={SignInFormData} btnName="Submit" />
             <SignUpSection />
-        </>
+        </main>
     );
 }
 
